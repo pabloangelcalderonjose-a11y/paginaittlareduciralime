@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto – Reducción del Desperdicio de Alimentos</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #99FF99;
+            scroll-behavior: smooth; /* NUEVO - suaviza el scroll */
+        }
+
+        /* NUEVO - Barra de navegación */
+        nav {
+            background: #2E7D32;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 28px;
+        }
+
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+            border-left: 5px solid #4CAF50;
+            padding-left: 10px;
+        }
+
+        /* NUEVO - efecto al pasar el mouse en imágenes */
+        img {
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Tarjetas informativas (NUEVO) */
+        .cards {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #e8ffe8;
+            padding: 15px;
+            border-radius: 10px;
+            width: 260px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+
+        /* Formulario */
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #3a9e43;
+        }
+
+        /* Botón volver arriba (NUEVO) */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 18px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NUEVO - Barra de navegación -->
+<nav>
+    <a href="#campanas">Campañas</a>
+    <a href="#alianzas">Alianzas</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#test">Test</a>
+    <a href="#form">Compromiso</a>
+</nav>
+
+<header>
+    Reducción del Desperdicio de Alimentos
+</header>
+
+<section id="campanas">
+    <h2>Campañas de concientización en redes sociales</h2>
+    <p>
+        Crear contenido educativo y atractivo para redes sociales sobre técnicas de conservación,
+        cómo utilizar sobras y consejos para planificar comidas.
+    </p>
+    <center>
+        <img src="conse.png" alt="Imagen principal" height="25%" width="20%">
+    </center>
+    <p>
+        Compartir infografías, videos cortos y testimonios de personas que han logrado reducir el desperdicio de sus alimentos.
+    </p>
+    <center>
+        <video src="Desper.mp4" controls width="400"></video>
+    </center>
+</section>
+
+<section id="alianzas">
+    <h2>Alianzas con supermercados y restaurantes locales</h2>
+    <p>
+        Establecer alianzas con supermercados y restaurantes locales para que donen alimentos próximos a caducar
+        a personas de bajos recursos.
+    </p>
+    <center>
+        <img src="don.jpg" height="25%" width="20%">
+        <img src="dond.png" height="25%" width="20%">
+    </center>
+</section>
+
+<section id="beneficios">
+    <h2>Beneficios esperados</h2>
+    <ul>
+        <li>Reducción del desperdicio de alimentos y apoyo a pequeños negocios.</li>
+        <li>Ahorro de dinero para familias y negocios.</li>
+        <li>Promoción de una alimentación más sostenible.</li>
+        <li>Disminución del uso de recursos naturales.</li>
+    </ul>
+    <center>
+        <img src="des.jpg" height="10%" width="20%">
+        <img src="perdaa.jpg" height="35%" width="30%">
+        <img src="perdi.avif" height="35%" width="30%">
+    </center>
+</section>
+
+<section>
+    <h2>Causas del desperdicio de alimentos</h2>
+    <ul>
+        <li>Mala planificación de compras.</li>
+        <li>Almacenamiento incorrecto.</li>
+        <li>Desconocimiento de fechas de consumo.</li>
+        <li>Porciones demasiado grandes.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Soluciones prácticas para el hogar</h2>
+    <ul>
+        <li>Planificar el menú semanal.</li>
+        <li>Revisar el refrigerador antes de comprar.</li>
+        <li>Congelar comida antes de que se eche a perder.</li>
+        <li>Convertir sobras en nuevas recetas.</li>
+        <li>Usar recipientes herméticos.</li>
+    </ul>
+</section>
+
+<!-- NUEVO - Tarjetas con datos reales -->
+<section>
+    <h2>Datos impactantes sobre el desperdicio</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>⚠ 30%</h3>
+            <p>De todos los alimentos producidos en el mundo se desperdician.</p>
+        </div>
+        <div class="card">
+            <h3>🥕 1,300 millones</h3>
+            <p>Toneladas de comida se tiran cada año.</p>
+        </div>
+        <div class="card">
+            <h3>💧 25%</h3>
+            <p>Del agua agrícola se usa para comida que jamás se consume.</p>
+        </div>
+    </div>
+</section>
+
+<!-- NUEVO - Test interactivo -->
+<section id="test">
+    <h2>Test rápido: ¿Cuánto sabes del desperdicio?</h2>
+    <p>Pregunta: ¿Cuál es la causa más común del desperdicio de alimentos en casa?</p>
+
+    <button onclick="respuesta('correcto')">Mala planificación</button>
+    <button onclick="respuesta('incorrecto')">El clima</button>
+    <button onclick="respuesta('incorrecto')">Colores de los empaques</button>
+
+    <p id="resultado" style="font-weight:bold; margin-top:10px;"></p>
+</section>
+
+<script>
+function respuesta(tipo){
+    if(tipo === "correcto"){
+        document.getElementById("resultado").textContent = "✔ Correcto: La mala planificación es la causa principal.";
+        document.getElementById("resultado").style.color = "green";
+    } else {
+        document.getElementById("resultado").textContent = "✘ Incorrecto. Intenta otra vez.";
+        document.getElementById("resultado").style.color = "red";
+    }
+}
+</script>
+
+<section id="form">
+    <h2>Formulario de compromiso</h2>
+    <form id="formCompromiso">
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+        <textarea id="mensaje" placeholder="¿Qué acción realizarás para reducir el desperdicio?" required></textarea>
+        <button type="submit">Enviar compromiso</button>
+    </form>
+    <p id="confirmacion" style="color: green; font-weight: bold;"></p>
+</section>
+
+<script>
+document.getElementById("formCompromiso").addEventListener("submit", function(e){
+    e.preventDefault();
+    let nombre = document.getElementById("nombre").value;
+    document.getElementById("confirmacion").textContent =
+        "¡Gracias " + nombre + "! Tu compromiso ha sido registrado.";
+});
+</script>
+
+<!-- NUEVO - botón volver arriba -->
+<button id="topBtn" onclick="window.scrollTo(0,0)">↑</button>
+
+<script>
+window.addEventListener("scroll", function(){
+    let btn = document.getElementById("topBtn");
+    if(window.scrollY > 300){
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+});
+</script>
+
+<footer>
+    Proyecto escolar – Página creada con base en notas del cuaderno
+</footer>
+
+</body>
+</html>
