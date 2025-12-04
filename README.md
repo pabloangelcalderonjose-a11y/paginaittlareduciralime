@@ -1,0 +1,2 @@
+# paginaittlareduciralime
+Disminuir
